@@ -3,7 +3,9 @@ class AppIcons{
 
   static const add = "assets/icons/add.svg";
   static const home = "assets/icons/home.svg";
+  static const email = "assets/icons/email.svg";
   static const friends = "assets/icons/friends.svg";
+  static const password = "assets/icons/password.svg";
   static const chat = "assets/icons/chat.svg";
   static const profile = "assets/icons/profile.svg";
   static const person = "assets/icons/person.svg";
@@ -30,5 +32,14 @@ class AppIcons{
   static const shareProfile  = "assets/icons/shareProfile.svg";
   static const group  = "assets/icons/group.svg";
   static const createGroup  = "assets/icons/createGroup.svg";
+  static const delete  = "assets/icons/delete.svg";
+  static const block  = "assets/icons/block.svg";
+  static const unblock  = "assets/icons/unblock.svg";
+  static const description  = "assets/icons/description.svg";
+  static const String bellIcon = "assets/icons/bell_icon.svg";
+  static const String logOutIcon = "assets/icons/log_out_icon.svg";
+  static const String eye = "assets/icons/eye.svg";
+  static const String editProfilee = "assets/icons/editProfilee.svg";
+
 
 }

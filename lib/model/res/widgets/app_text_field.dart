@@ -19,7 +19,7 @@ class AppTextField extends StatelessWidget {
   final Color? enableBorderColor;
   final TextInputType? keyboardType;
   final List<TextInputFormatter>? inputFormatters;
-final bool obscureText;
+final bool obscureText,readOnly;
   const AppTextField({
     super.key,
     required this.hintText,
@@ -30,6 +30,7 @@ final bool obscureText;
     this.focusNode,
     this.radius,
     this.obscureText = false,
+    this.readOnly = false,
     this.keyboardType,
     this.inputFormatters,
     this.suffixIcon,
@@ -58,6 +59,7 @@ final bool obscureText;
       cursorColor: Colors.black,
       obscureText: obscureText,
       onChanged: onChanged,
+      readOnly: readOnly,
       decoration: InputDecoration(
         prefixIcon: prefixIcon,
         suffixIcon: suffixIcon,

@@ -13,7 +13,7 @@ class AppButtonWidget extends StatelessWidget {
   final Color? buttonColor, textColor;
   final double? radius, fontSize;
   final bool loader;
-  final Widget? prefixIcon; // New parameter for prefix icon
+  final Widget? prefixIcon,suffixIcon; // New parameter for prefix icon
 
   const AppButtonWidget({
     super.key,
@@ -29,11 +29,12 @@ class AppButtonWidget extends StatelessWidget {
     this.fontWeight = FontWeight.w400,
     this.alignment = Alignment.centerLeft,
     this.prefixIcon, // Initialize the prefix icon parameter
+    this.suffixIcon, // Initialize the prefix icon parameter
   });
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
+    return InkWell(
       onTap: onPressed,
       child: Align(
         alignment: alignment,
@@ -64,6 +65,10 @@ class AppButtonWidget extends StatelessWidget {
                 fontWeight: fontWeight,
                 color: textColor ?? AppColors.appWhiteColor,
               ),
+              if (suffixIcon != null) ...[
+                suffixIcon!,
+                const SizedBox(width: 8), // Spacing between icon and text
+              ],
             ],
           ),
         ),
